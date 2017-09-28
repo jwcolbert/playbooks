@@ -1,0 +1,18 @@
+- hosts: localhost
+  connection: local
+  tasks:
+
+    - name: Create Server
+      clc_server:
+        name: "{{ server.serverName }}"
+        description: "{{ server.serverDescription }}"
+        location: "{{ server.datacenter }}"
+        group: "{{ server.group.name }}"
+        template: "{{ server.image.name }}"
+        password: "{{ server.serverPassword }}"
+        network_id: "{{ server.network.id }}"
+        cpu: "{{ server.cpu }}"
+        memory: "{{ server.memory }}"
+        type: "{{ server.serverType }}"
+        storage_type: "{{ server.serverType }}"
+        count: "{{ server.count }}"
