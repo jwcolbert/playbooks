@@ -1,4 +1,4 @@
-name: Run Ad-Hoc Command
+name: Justin Run Ad-Hoc Command
 description: Run Ad-hoc commands on selected hosts
 shortDescription: Run Ad-hoc commands on hosts
 version: 0.0.1
